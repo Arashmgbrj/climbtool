@@ -1,64 +1,194 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Climbtool 🧗‍♂️
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+[![Laravel](https://img.shields.io/badge/Laravel-11-FF2D20)](https://laravel.com)
+[![React](https://img.shields.io/badge/React-18-61DAFB)](https://reactjs.org)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Website](https://img.shields.io/badge/website-climbtools.ir-brightgreen)](https://climbtools.ir)
 
-## About Laravel
+**پلتفرم جامع صعود حرفه‌ای** – یک راه‌حل نرم‌افزاری مدرن برای برنامه‌ریزی، تحلیل و مدیریت فعالیت‌های سنگ‌نوردی و کوهنوردی.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+🌐 **وبسایت زنده:** [https://climbtools.ir](https://climbtools.ir)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🏗️ معماری پروژه
 
-## Learning Laravel
+این پروژه از یک معماری **هیبرید و قدرتمند** استفاده می‌کند که بهترین قابلیت‌های Laravel و React را ترکیب کرده است:
+Climbtool/
+├── بک‌اند (Backend)
+│ ├── فریمورک: Laravel 11 (هسته اصلی)
+│ ├── وظیفه: تامین API، منطق کسب‌وکار، احراز هویت، دیتابیس
+│ └── پنل ادمین: میزبان اپلیکیشن React (در مسیر /admin)
+│
+├── فرانت‌اند عمومی (Public Frontend)
+│ ├── تکنولوژی: Blade Templates (درون Laravel)
+│ └── وظیفه: صفحات اصلی سایت، سئو بهینه، تجربه کاربری سریع
+│
+└── پنل مدیریت (Admin Panel)
+├── تکنولوژی: React 18 (یک SPA مجزا)
+├── اتصال: از طریق APIهای اختصاصی Laravel
+└── وظیفه: رابط مدیریت حرفه‌ای برای ادمین‌ها
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## ✨ ویژگی‌های کلیدی
 
-### Premium Partners
+*   **هسته قدرتمند:** بک‌اند یکپارچه و امن با **Laravel 11**
+*   **فرانت‌اند بهینه:** صفحات اصلی با **Blade** برای عملکرد و سئوی عالی
+*   **پنل ادمین مدرن:** رابط مدیریت **React-based SPA** با UX برتر
+*   **API جامع:** مجموعه کاملی از APIها برای:
+  *   تعامل کاربران با سایت
+  *   ارتباط پنل ادمین با سرور
+  *   یکپارچه‌سازی‌های آینده
+*   **امنیت بالا:** احراز هویت دوگانه (برای کاربران و ادمین‌ها)
+*   **دیتابیس پیشرفته:** طراحی ماژولار و بهینه‌شده با **Eloquent ORM**
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+---
 
-## Contributing
+## 🚀 شروع به کار (توسعه)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### پیش‌نیازها
+*   **PHP 8.2+** و **Composer**
+*   **Node.js 18+** و **npm/yarn**
+*   **MySQL 5.7+** یا **MariaDB**
 
-## Code of Conduct
+### 📦 نصب و راه‌اندازی (گام به گام)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+1.  **کلون پروژه:**
+    ```bash
+    git clone https://github.com/Arashmgbrj/climbtool.git
+    cd climbtool
+    ```
 
-## Security Vulnerabilities
+2.  **نصب وابستگی‌های Laravel:**
+    ```bash
+    composer install
+    ```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+3.  **تنظیم فایل محیطی:**
+    ```bash
+    cp .env.example .env
+    php artisan key:generate
+    ```
+    *   تنظیم `DB_DATABASE`، `DB_USERNAME`، `DB_PASSWORD` در `.env`
 
-## License
+4.  **مایگریت و سید دیتابیس:**
+    ```bash
+    php artisan migrate --seed
+    ```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+5.  **نصب وابستگی‌های React (پنل ادمین):**
+    ```bash
+    cd resources/js/admin  # مسیر پنل ادمین
+    npm install
+    ```
+
+6.  **راه‌اندازی محیط توسعه:**
+    ```bash
+    # ترمینال ۱: سرور Laravel
+    php artisan serve
+    
+    # ترمینال ۲: توسعه پنل ادمین (در مسیر resources/js/admin)
+    npm run dev
+    ```
+
+7.  **دسترسی به پروژه:**
+    *   **سایت اصلی:** [http://localhost:8000](http://localhost:8000)
+    *   **پنل ادمین:** [http://localhost:8000/admin](http://localhost:8000/admin)
+    *   **API ها:** [http://localhost:8000/api/...](http://localhost:8000/api/...)
+
+---
+
+## 🔧 بخش‌های فنی
+
+### API های پنل ادمین
+بک‌اند Laravel، APIهای اختصاصی برای پنل React فراهم می‌کند که معمولاً در مسیر `/api/admin/*` قرار دارند و شامل:
+
+*   `GET /api/admin/dashboard/stats` - آمار کلی سیستم
+*   `GET /api/admin/users` - مدیریت کاربران
+*   `POST /api/admin/content` - مدیریت محتوا
+*   `GET /api/admin/logs` - مشاهده لاگ‌های سیستم
+
+**توجه:** تمام APIهای ادمین با **Sanctum tokens** یا **middlewareهای اختصاصی** محافظت می‌شوند.
+
+### ساختار پنل ادمین (React)
+
+
+resources/js/admin/
+├── src/
+│ ├── components/ # کامپوننت‌های قابل استفاده مجدد
+│ ├── pages/ # صفحات مختلف پنل
+│ ├── services/ # سرویس‌های API
+│ ├── hooks/ # هوک‌های سفارشی
+│ ├── utils/ # ابزارهای کمکی
+│ └── App.jsx # کامپوننت اصلی
+├── public/ # فایل‌های استاتیک
+└── package.json
+
+
+### ساختار Blade (فرانت‌اند اصلی)
+
+resources/views/
+├── layouts/ # لایه‌های اصلی
+├── components/ # کامپوننت‌های Blade
+├── pages/ # صفحات مختلف سایت
+└── partials/ # بخش‌های قابل استفاده مجدد
+
+---
+
+## 📦 استقرار (Deployment)
+
+### نیازمندی‌های سرور
+*   وب سرور (Apache/Nginx) با پشتیبانی از PHP 8.2
+*   MySQL/MariaDB
+*   Node.js (فقط برای مرحله بیلد)
+
+### مراحل استقرار
+1.  آپلود کد به سرور
+2.  تنظیم `APP_ENV=production` در `.env`
+3.  نصب وابستگی‌ها: `composer install --no-dev`
+4.  ساخت پنل ادمین: `npm run build` در مسیر پنل
+5.  تنظیم مجوزهای storage و cache
+6.  پیکربندی وب سرور (برای Laravel و فایل‌های استاتیک React)
+
+---
+
+## 🔐 امنیت و API
+
+این پروژه از **لایه‌های امنیتی متعدد** بهره می‌برد:
+
+1.  **CSRF Protection** برای فرم‌های Blade
+2.  **Sanctum API Tokens** برای احراز هویت SPA
+3.  **CORS Configuration** برای APIها
+4.  **Middlewareهای سفارشی** برای دسترسی ادمین
+5.  **Rate Limiting** برای جلوگیری از حملات
+
+---
+
+## 🤝 مشارکت در توسعه
+
+1.  Issue را بررسی یا ایجاد کنید
+2.  پروژه را Fork کنید
+3.  Branch جدید ایجاد کنید: `git checkout -b feature/نام-قابلیت`
+4.  تغییرات را Commit کنید: `git commit -m 'افزودن قابلیت جدید'`
+5.  به Branch خود Push کنید: `git push origin feature/نام-قابلیت`
+6.  Pull Request ایجاد کنید
+
+---
+
+## 📄 لایسنس
+
+این پروژه تحت مجوز **MIT** منتشر شده است.
+
+---
+
+## 👨‍💻 توسعه‌دهنده
+
+*   **آرش باقری** 
+  - [GitHub](https://github.com/Arashmgbrj)
+  - [وبسایت](https://climbtools.ir)
+
+---
+
+⭐ **اگر این پروژه را دوست دارید، حتماً روی GitHub به آن ستاره دهید!**
